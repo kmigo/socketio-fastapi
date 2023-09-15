@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <style>
+        #chat-box {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            overflow-y: scroll;
+        }
+        #message-input {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-box">
+        <!-- Mensagens aparecerão aqui -->
+    </div>
+
+    <div>
+        <input id="message-input" type="text" placeholder="Digite sua mensagem...">
+        <button id="send-button">Enviar</button>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
